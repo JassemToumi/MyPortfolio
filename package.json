@@ -1,0 +1,29 @@
+{
+  "name": "bootstarp-5---sass",
+  "version": "1.0.0",
+  "description": "Learning Bootstrap 5 with Saa",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Jassem Toumi",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.0",
+    "autoprefixer": "^10.4.2",
+    "bootstrap": "^5.1.3",
+    "glightbox": "^3.2.0",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0"
+  }
+}

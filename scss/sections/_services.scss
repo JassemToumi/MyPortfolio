@@ -1,0 +1,131 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+#H1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  padding-right: 2rem;
+  @include media-breakpoint-down(md) {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+}
+#Services {
+  background-color: #f3f4f5;
+}
+
+.our-services {
+  position: relative;
+  padding: 1rem 0;
+  .services__content {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .icon--1,
+    .icon--2 {
+      font-size: 2.5rem;
+      color: $purple-light;
+      @include media-breakpoint-down(md) {
+        font-size: 2rem;
+      }
+    }
+    .icon--1 {
+      @include media-breakpoint-up(lg) {
+        margin-left: 20%;
+      }
+    }
+    .icon--2 {
+      @include media-breakpoint-up(lg) {
+        margin-left: 5%;
+      }
+    }
+  }
+  .p-description {
+    &-1,
+    &-3 {
+      @include media-breakpoint-up(lg) {
+        margin-left: 20%;
+        font-size: 1.5rem;
+      }
+    }
+    &-2,
+    &-4 {
+      @include media-breakpoint-up(lg) {
+        margin-right: 20%;
+        font-size: 1.5rem;
+        margin-left: 5%;
+      }
+    }
+
+    @media (min-width: 700px) and (max-width: 992px) {
+      font-size: 1.5rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.2rem;
+    }
+  }
+  .illustrations {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+      padding-bottom: 0.5rem;
+      justify-content: center;
+      margin-top: 0;
+    }
+    .image-2-services {
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: inline-block;
+      }
+    }
+    .image-1-services {
+      @include media-breakpoint-down(sm) {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+  .description-spacing {
+    margin-top: 1.5rem;
+    @include media-breakpoint-up(lg) {
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+    }
+  }
+  .border-right {
+    @include media-breakpoint-up(sm) {
+      border-right: 0.1rem solid $primary;
+    }
+  }
+  .hidden-element {
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
+  }
+}
+
+.col-services-1 {
+  @media (min-width: 700px) and (max-width: 992px) {
+    width: 50%;
+  }
+  &--img {
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+    }
+  }
+}
+
+.col-services-2 {
+  @media (min-width: 700px) and (max-width: 992px) {
+    width: 50%;
+    margin-top: 0.5rem;
+  }
+  &--img {
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+    }
+  }
+}
